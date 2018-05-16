@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<HTML LANG="EN">
+<HEAD>
+    <META CHARSET="UTF-8">
+    <META NAME="keywords" CONTENT="NY, NYU Stern School of Business, safe area, affordable area, near university">
+    <META NAME="description"
+          CONTENT="A web application which ranks NY habitable districts according to several criteria such as safety, affordability and closeness to NYU Stern School of Business.">
+    <META NAME="author" CONTENT="Iván Alejandro Cruz Tole.">
+    <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+    <TITLE> NY's best districts to live in for a NYU Stern School of Business student  </TITLE>
+    <STYLE>
+        HEADER { border: black }
+        #Header1 { text-align: center }
+        NAV { text-align: center }
+        LABEL:hover { font-style: oblique }
+        SECTION { margin: 0 auto; width: 650px; text-align: justify}
+        FOOTER { text-align: center; color: gray }
+        A { color: black; font-style: oblique }
+        LI { padding: 10px }
+        LI:nth-child(even) { background-color: #d9d9d9 }
+        BODY { font-family: "Times New Roman" }
+    </STYLE>
+
+</HEAD>
+
+<BODY>
+    <HEADER ID="Header1">
+        <H1> NY's best districts to live in for a NYU Stern School of Business student </H1>
+        <HR width="1000">
+    </HEADER>
+
+    <NAV>
+        <LABEL>TOP 3 - affordability, safety & closeness</LABEL> &#9830;
+        <LABEL>TOP 10 - affordability</LABEL> &#9830;
+        <LABEL>TOP 10 - safety</LABEL>  &#9830;
+        <LABEL>TOP 10 - closeness</LABEL>  &#9830;
+        <LABEL>TOP 10 - air quality</LABEL>  &#9830;
+        <LABEL>TOP 10 - leisure</LABEL>  &#9830;
+        <LABEL>TOP 10 - transportation</LABEL>  &#9830;
+        <LABEL><STRONG>District search</STRONG></LABEL>
+        <HR width="1250">
+    </NAV>
+
+    <SECTION>
+        <ARTICLE>
+            <HEADER ID="Header2">
+                <H3> Introduction. </H3>
+            </HEADER>
+
+                This is a web application which will allow you to rank NY's districts according to several different
+                factors of huge relevance in order to enjoy a pleasant stay at NY. <BR><BR>
+                The <STRONG>factors</STRONG> in consideration are the following:
+                <UL>
+                    <LI> <EM>Safety</EM> - Measured by the number and severity of the crimes committed in a given
+                         district in December 31st, 2015.</LI>
+                    <LI> <EM>Affordability</EM> - Given by the number of low income units attributed to a given
+                         district. Such number, by the way, means nothing but the amount of units with
+                         rents that are affordable to households earning 51 to 80% of the area median
+                         income. </LI>
+                    <LI> <EM>Closeness</EM> - Taken as the distance of the district's centre to the NYU Stern School
+                         of business.</LI>
+                    <LI> <EM>Air quality</EM> - Determined as the result of pondering traffic density, related respiratory,
+                         cardiovascular and asthma hospitalizations, deaths and ED (i.e. Emergency Department) visits,
+                         and air contaminant substances emissions and concentrations.</LI>
+                    <LI> <EM>Leisure</EM> - Quantified by pondering the number of farmer markets, nearby fishing rivers, child
+                         care programs covering the district, authorized liquor expediters, museums and art galleries.</LI>
+                    <LI> <EM>Transportation</EM> - Assessed by considering the number of subway stations, the typical usage
+                         given to the public transportation system (public transportation services congestion) and
+                         the particular vehicles operation intensity. </LI>
+                </UL>
+            The <STRONG>sources</STRONG> for the data involved in the computation of the previously mentioned indicators
+            are accessible via the following links:<BR>
+            <UL>
+                <LI> <A href="https://catalog.data.gov/dataset/neighborhood-names-gis">
+                    Neighborhood Names GIS.</A></LI>
+                <LI> <A href="https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nycd/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson">
+                    NY Districts geoshapes.</A></LI>
+                <LI> <A href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i/data">
+                    Crimes in NY.</A></LI>
+                <LI> <A href="https://catalog.data.gov/dataset/housing-new-york-units-by-building">
+                    Dataset contains information on New York City housing by building data.</A></LI>
+                <LI> <A href="https://catalog.data.gov/dataset/air-quality-ef520">
+                    Dataset contains information on New York City air quality surveillance data.</A></LI>
+                <LI> <A href="https://catalog.data.gov/dataset/new-york-city-museums">
+                    New York City Museums.</A></LI>
+                <LI> <A href="https://catalog.data.gov/dataset/new-york-city-art-galleries">
+                    New York City Art Galleries.</A></LI>
+                <LI> <A href="https://catalog.data.gov/dataset/new-york-city-farmers-markets-574c2">
+                    New York City Farmers Markets.</A></LI>
+                <LI> <A href="https://catalog.data.gov/dataset/open-ny-gov-api-catalog">
+                    Open.ny.gov API Catalog.</A></LI>
+            </UL>
+            The <STRONG>service</STRONG> will be provided in the following way:
+            <UL>
+                <LI> You count with the possibility to <U>obtain certain information related to every habitable district
+                     of NY</U>. Such information is a valuation of the district for each of the previously listed factors
+                     and their <EM>subfactors</EM> (i.e. The indicators summing up a factor, as described above for
+                     each of the factors), plus a geographical reference to the district with respect to the other
+                     districts (Google Maps). The valuations will be displayed both in a singular and comparative way,
+                     so that it is possible to compare the district's habitability with that one of the other
+                     districts. <BR>
+                     All you have to do is to <U>enter the district of interest's name in the text box displayed right
+                     after clicking on the "district search" option</U>, which lays in the navigation bar, at the
+                     beginning of the page.</LI>
+                <LI> For a faster access to potentially relevant information, you can <U>access the list of the most
+                     habitable districts according to some criteria</U> (normally a single factor, sometimes even three).
+                     The information displayed for each district will be the same as in the last item. <BR>
+                     All what needs to be done to access this service is to <U>click on the option of interest right above,
+                     in the navigation bar.</U></LI>
+            </UL>
+        </ARTICLE>
+    </SECTION>
+
+    <FOOTER>
+        Author's contact information:<BR> Iván Alejandro Cruz Tole <BR> iacruzt@unal.edu.co
+    </FOOTER>
+</BODY>
+</HTML>
